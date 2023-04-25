@@ -37,7 +37,7 @@ class _CardMaintenanceItemState extends State<CardMaintenanceItem> {
         width: double.infinity,
         height: 98,
         child: Container(
-          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(15)), border: Border.all(color: Colors.grey), boxShadow: const [BoxShadow(color: Colors.grey, blurRadius: 10, offset: Offset(4, 8))]),
+          decoration: const BoxDecoration(color: Colors.white, borderRadius: BorderRadius.all(Radius.circular(10)), boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 5, offset: Offset(0, 1))]),
           child: Padding(
               padding: const EdgeInsets.only(top: 10.0, left: 10.0, bottom: 10.0, right: 10),
               child: Row(
@@ -123,10 +123,11 @@ class _CardMaintenanceItemState extends State<CardMaintenanceItem> {
                         child: Column(
                           children: [
                             const Padding(
-                              padding: EdgeInsets.only(bottom: 18),
+                              padding: EdgeInsets.only(bottom: 17),
                               child: Text('Scadenza:', style: TextStyle(fontWeight: FontWeight.bold)),
                             ),
                             Text(todayString, style: TextStyle(color: howMuchIsMissing_color, fontWeight: FontWeight.bold)),
+                            Text('${howDaysMissing}gg', style: TextStyle(color: howMuchIsMissing_color)),
                           ],
                         ),
                       )),
