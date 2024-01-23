@@ -32,6 +32,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Web related
+lib/generated_plugin_registrant.dart
+
 # Symbolication related
 app.*.symbols
 
@@ -42,3 +45,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+pubspec.lock
+local.properties
+.fvm/flutter_sdk
+.fvm/fvm_config.json
+.run/
+generated_plugins.cmake
+generated_plugin_registrant.cc
+generated_plugin_registrant.cc~0628c557e135e3555c113469b1a5cc887dcb1485
+generated_plugins.cmake~0628c557e135e3555c113469b1a5cc887dcb1485
+.vscode/launch.json
+
